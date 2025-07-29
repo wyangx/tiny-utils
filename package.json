@@ -1,5 +1,5 @@
 {
-  "name": "@wy/tiny-utils",
+  "name": "@wyangx/tiny-utils",
   "version": "0.0.2",
   "type": "module",
   "description": "",
@@ -31,6 +31,9 @@
     "tiny"
   ],
   "author": "Wang Yang",
-  "license": "ISC",
-  "packageManager": "pnpm@10.13.1"
+  "license": "MIT",
+  "packageManager": "pnpm@10.13.1",
+  "publishConfig": {
+    "access": "public"
+  }
 }

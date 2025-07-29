@@ -1,4 +1,4 @@
-# @wy/tiny-utils
+# @wyangx/tiny-utils
 
 ## 0.0.2
 
