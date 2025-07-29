@@ -4,7 +4,6 @@
 
 [![npm](https://img.shields.io/npm/v/@wy/tiny-utils?style=flat&colorA=000&colorB=00c853)](https://npmjs.com/@wyangx/tiny-utils)
 [![size](https://img.shields.io/bundlephobia/minzip/@wyangx/tiny-utils?style=flat&colorA=000&colorB=00c853)](https://bundlephobia.com/package/@wyangx/tiny-utils)
-[![CI](https://img.shields.io/github/actions/workflow/status/yourname/tiny-utils/release.yml?branch=main&label=ci&style=flat&colorA=000&colorB=00c853)](https://github.com/yourname/tiny-utils/actions)
 
 ## 安装
 

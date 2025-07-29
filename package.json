@@ -35,5 +35,12 @@
   "packageManager": "pnpm@10.13.1",
   "publishConfig": {
     "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wyangx/tiny-utils.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wyangx/tiny-utils/issues"
   }
 }
