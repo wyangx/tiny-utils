@@ -29,6 +29,10 @@ console.log(colorAlpha('#ff0000', 0.5)) // rgba(255, 0, 0, 0.5)
 import { dfmt } from '@wy/tiny-utils'
 console.log(dfmt(new Date(), 'yyyy-MM-dd hh:mm')) // 2023-01-01 12:00
 
+// Placeholder images
+import { placePic } from '@wy/tiny-utils'
+console.log(placePic({ width: 300, grayscale: true })) // https://picsum.photos/300/480?grayscale
+
 // LocalStorage utilities
 import { ls } from '@wy/tiny-utils'
 ls.set('key', 'value', 1000) // 1 second expiration
@@ -42,6 +46,7 @@ console.log(ls.get('key', 'default')) // value
 | `slug` | 将任意字符串转为 URL-safe slug | `slug('Hello World!') → hello-world` |
 | `colorAlpha` | 将 HEX 颜色转为 RGBA 格式 | `colorAlpha('#ff0000', 0.5) → rgba(255, 0, 0, 0.5)` |
 | `dfmt` | 格式化日期为指定模式的字符串 | `dfmt(new Date(), 'yyyy-MM-dd') → 2023-01-01` |
+| `placePic` | 生成占位图片 URL | `placePic({ width: 300, grayscale: true }) → https://picsum.photos/300/480?grayscale` |
 | `ls.set` | 设置带过期时间的 localStorage 值 | `ls.set('key', 'value', 1000)` |
 | `ls.get` | 获取 localStorage 值，支持过期检查 | `ls.get('key', 'default')` |
 | `ls.remove` | 删除 localStorage 值 | `ls.remove('key')` |
