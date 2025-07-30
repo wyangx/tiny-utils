@@ -1,5 +1,5 @@
 import { expect, test } from 'vitest'
-import { dfmt } from '../src/index.js'
+import { dfmt } from '../src/index'
 
 const d = new Date('2023-10-05T09:07:04')
 

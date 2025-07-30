@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { ls } from '../src/index.js'
+import { ls } from '../src/index'
 
 describe('ls-mate', () => {
   const KEY = '__test__'
