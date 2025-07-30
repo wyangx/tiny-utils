@@ -2,7 +2,7 @@
 
 > 极轻量、零依赖、ESM-only 的常用工具集合。
 
-[![npm](https://img.shields.io/npm/v/@wy/tiny-utils?style=flat&colorA=000&colorB=00c853)](https://npmjs.com/@wyangx/tiny-utils)
+[![npm](https://img.shields.io/npm/v/@wyangx/tiny-utils?style=flat&colorA=000&colorB=00c853)](https://npmjs.com/@wyangx/tiny-utils)
 [![size](https://img.shields.io/bundlephobia/minzip/@wyangx/tiny-utils?style=flat&colorA=000&colorB=00c853)](https://bundlephobia.com/package/@wyangx/tiny-utils)
 
 ## 安装
