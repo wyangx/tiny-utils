@@ -1,5 +1,11 @@
 # @wyangx/tiny-utils
 
+## 0.0.4
+
+### Patch Changes
+
+- 861ceeb: 增加 place-pic 模块
+
 ## 0.0.3
 
 ### Patch Changes
