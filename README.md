@@ -17,8 +17,22 @@ npm i @wyangx/tiny-utils
 按需导入，支持 Tree-shaking：
 
 ```ts
+// Slug conversion
 import { slug } from '@wy/tiny-utils'
 console.log(slug('你好 World!')) // ni-hao-world
+
+// Color conversion
+import { colorAlpha } from '@wy/tiny-utils'
+console.log(colorAlpha('#ff0000', 0.5)) // rgba(255, 0, 0, 0.5)
+
+// Date formatting
+import { dfmt } from '@wy/tiny-utils'
+console.log(dfmt(new Date(), 'yyyy-MM-dd hh:mm')) // 2023-01-01 12:00
+
+// LocalStorage utilities
+import { ls } from '@wy/tiny-utils'
+ls.set('key', 'value', 1000) // 1 second expiration
+console.log(ls.get('key', 'default')) // value
 ```
 
 ## API
@@ -26,7 +40,12 @@ console.log(slug('你好 World!')) // ni-hao-world
 | 函数 | 说明 | 示例 |
 |---|---|---|
 | `slug` | 将任意字符串转为 URL-safe slug | `slug('Hello World!') → hello-world` |
-| `colorAlpha` | 轻量色彩工具（预留） | `lighten('#000', 0.2)` |
+| `colorAlpha` | 将 HEX 颜色转为 RGBA 格式 | `colorAlpha('#ff0000', 0.5) → rgba(255, 0, 0, 0.5)` |
+| `dfmt` | 格式化日期为指定模式的字符串 | `dfmt(new Date(), 'yyyy-MM-dd') → 2023-01-01` |
+| `ls.set` | 设置带过期时间的 localStorage 值 | `ls.set('key', 'value', 1000)` |
+| `ls.get` | 获取 localStorage 值，支持过期检查 | `ls.get('key', 'default')` |
+| `ls.remove` | 删除 localStorage 值 | `ls.remove('key')` |
+| `ls.clear` | 清空所有 localStorage 值 | `ls.clear()` |
 
 ## 体积
 
