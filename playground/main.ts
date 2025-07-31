@@ -1,5 +1,5 @@
 // Import all functions from src
-import { slug, colorAlpha, dfmt, placePic } from '../src/index'
+import { slug, colorAlpha, dfmt, placePic, shuffle } from '../src/index'
 import * as ls from '../src/ls-mate'
 
 // Wait for DOM to be loaded
@@ -40,4 +40,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const defaultValue = ls.get('non-existent', 'default')
   document.getElementById('ls-default')!.textContent = `ls.get('non-existent', 'default') → ${defaultValue}`
+  
+  // Array shuffling
+  const originalArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+  const shuffledArray = shuffle(originalArray)
+  document.getElementById('shuffle-result')!.textContent = `shuffle([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]) → [${shuffledArray.join(', ')}]`
 })

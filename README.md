@@ -37,6 +37,10 @@ console.log(placePic({ width: 300, grayscale: true })) // https://picsum.photos/
 import { ls } from '@wy/tiny-utils'
 ls.set('key', 'value', 1000) // 1 second expiration
 console.log(ls.get('key', 'default')) // value
+
+// Array shuffling
+import { shuffle } from '@wy/tiny-utils'
+console.log(shuffle([1, 2, 3, 4, 5])) // [3, 1, 5, 2, 4] (random order)
 ```
 
 ## API
@@ -51,6 +55,7 @@ console.log(ls.get('key', 'default')) // value
 | `ls.get` | 获取 localStorage 值，支持过期检查 | `ls.get('key', 'default')` |
 | `ls.remove` | 删除 localStorage 值 | `ls.remove('key')` |
 | `ls.clear` | 清空所有 localStorage 值 | `ls.clear()` |
+| `shuffle` | 使用 Fisher–Yates 算法打乱数组顺序 | `shuffle([1, 2, 3, 4, 5]) → [3, 1, 5, 2, 4]` |
 
 ## 体积
 
