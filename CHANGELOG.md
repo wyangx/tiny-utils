@@ -1,5 +1,11 @@
 # @wyangx/tiny-utils
 
+## 0.0.5
+
+### Patch Changes
+
+- eae3b2c: 增加 洗牌算法 模块
+
 ## 0.0.4
 
 ### Patch Changes
