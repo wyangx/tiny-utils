@@ -3,6 +3,7 @@
   "version": "0.0.4",
   "type": "module",
   "description": "",
+  "main": "./dist/index.js",
   "exports": {
     ".": "./dist/index.js",
     "./package.json": "./package.json"
