@@ -20,28 +20,28 @@ npm i @wyangx/tiny-utils
 
 ```ts
 // Slug conversion
-import { slug } from '@wy/tiny-utils'
+import { slug } from '@wyangx/tiny-utils'
 console.log(slug('你好 World!')) // ni-hao-world
 
 // Color conversion
-import { colorAlpha } from '@wy/tiny-utils'
+import { colorAlpha } from '@wyangx/tiny-utils'
 console.log(colorAlpha('#ff0000', 0.5)) // rgba(255, 0, 0, 0.5)
 
 // Date formatting
-import { dfmt } from '@wy/tiny-utils'
+import { dfmt } from '@wyangx/tiny-utils'
 console.log(dfmt(new Date(), 'yyyy-MM-dd hh:mm')) // 2023-01-01 12:00
 
 // Placeholder images
-import { placePic } from '@wy/tiny-utils'
+import { placePic } from '@wyangx/tiny-utils'
 console.log(placePic({ width: 300, grayscale: true })) // https://picsum.photos/300/480?grayscale
 
 // LocalStorage utilities
-import { ls } from '@wy/tiny-utils'
+import { ls } from '@wyangx/tiny-utils'
 ls.set('key', 'value', 1000) // 1 second expiration
 console.log(ls.get('key', 'default')) // value
 
 // Array shuffling
-import { shuffle } from '@wy/tiny-utils'
+import { shuffle } from '@wyangx/tiny-utils'
 console.log(shuffle([1, 2, 3, 4, 5])) // [3, 1, 5, 2, 4] (random order)
 ```
 
