@@ -7,6 +7,9 @@ export default function colorAlpha(hex: string, alpha: number): string {
   if (!/^#?([0-9A-Fa-f]{3}|[0-9A-Fa-f]{6})$/.test(hex))
     throw new TypeError('Invalid HEX color')
 
+  if (!Number.isFinite(alpha) || alpha < 0 || alpha > 1)
+    throw new RangeError('alpha must be between 0 and 1')
+
   // 去掉 #
   hex = hex.replace('#', '')
 
@@ -18,9 +21,6 @@ export default function colorAlpha(hex: string, alpha: number): string {
   const r = parseInt(hex.slice(0, 2), 16)
   const g = parseInt(hex.slice(2, 4), 16)
   const b = parseInt(hex.slice(4, 6), 16)
-
-  if (alpha < 0 || alpha > 1)
-    throw new RangeError('alpha must be between 0 and 1')
 
   return `rgba(${r}, ${g}, ${b}, ${alpha})`
 }

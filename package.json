@@ -2,10 +2,13 @@
   "name": "@wyangx/tiny-utils",
   "version": "0.0.5",
   "type": "module",
-  "description": "",
+  "description": "极轻量、零依赖、ESM-only 的 TypeScript 工具函数集合。",
   "main": "./dist/index.js",
   "exports": {
-    ".": "./dist/index.js",
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
     "./package.json": "./package.json"
   },
   "types": "./dist/index.d.ts",

@@ -14,3 +14,7 @@ test('yyyy-MM-dd hh:mm', () => {
 test('hh:mm:ss', () => {
   expect(dfmt(d, 'hh:mm:ss')).toBe('09:07:04')
 })
+
+test('throws on invalid date', () => {
+  expect(() => dfmt('bad-date')).toThrow(TypeError)
+})

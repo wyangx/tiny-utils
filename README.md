@@ -21,7 +21,7 @@ npm i @wyangx/tiny-utils
 ```ts
 // Slug conversion
 import { slug } from '@wyangx/tiny-utils'
-console.log(slug('你好 World!')) // ni-hao-world
+console.log(slug('Café World!')) // cafe-world
 
 // Color conversion
 import { colorAlpha } from '@wyangx/tiny-utils'

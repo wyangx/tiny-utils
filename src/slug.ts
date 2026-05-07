@@ -1,4 +1,5 @@
 const rControl = /[\u0000-\u001f]/g
+const rCombiningMark = /[\u0300-\u036f]/g
 const rSpecial = /[\s~`!@#$%^&*()\-_+=\[{\]}\\|;:'",<.>/?]+/g
 
 /**
@@ -22,6 +23,7 @@ const rSpecial = /[\s~`!@#$%^&*()\-_+=\[{\]}\\|;:'",<.>/?]+/g
 export default function slugify(str = ''): string {
   return str
     .normalize('NFKD')
+    .replace(rCombiningMark, '')
     .toLowerCase()
     .replace(rControl, '')
     .replace(rSpecial, '-')

@@ -11,6 +11,10 @@ const pad = (n: number) => n.toString().padStart(2, '0')
  */
 export default function dfmt(date: Date | number | string = new Date(), pattern: Pattern = 'yyyy-MM-dd'): string {
   const d = new Date(date)
+
+  if (Number.isNaN(d.getTime()))
+    throw new TypeError('Invalid date')
+
   const y = d.getFullYear()
   const M = d.getMonth() + 1
   const D = d.getDate()
